@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img id="vec" src="vector.png" />
+      <div id="form">
+        <h1>REGISTER</h1>
+
+        <form id="for">
+          <input
+            id="i1"
+            autofocus
+            value=""
+            placeholder=" Enter Id"
+            type="text"
+          />
+
+          <!-- <label id="l2">Name</label> -->
+          <input id="i2" value="" placeholder="Enter Name " type="text" />
+          <!-- <label id="l3">Phone No</label> -->
+          <input id="i3" value="" placeholder="Enter Phone " type="text" />
+          <!-- <label id="l4">Email</label> -->
+          <input id="i4" value="" placeholder="Enter Email " type="text" />
+          <div id="btn">
+            <button type="button" onclick="submitData()" value="SUBMIT">
+              SUBMIT
+            </button>
+            <button type="reset" value="RESET" aria-placeholder="RESET">
+              RESET
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="ShowData1">
+            <table id="studentList"   cellspacing="0px"  cellpadding="10px" >
+                <thead >
+                    <tr style="font-weight: bolder;" >
+                        <td id="border" > ID</td>
+                        <td id="border"> Name</td>
+                        <td id="border"> Phone</td>
+                        <td id="border"> Email</td>
+                        <td align="center" style="border-bottom:2px solid wheat; ;" > Edit/Del</td>
+                    </tr>
+                    
+                </thead>
+                <br>
+               
+                <tbody style="border: 2px;">
+                    
+                </tbody>
+               
+            </table>
+            
+      </div>
+      <a id="vd" onclick="change()">VIEW-DATA</a>
+      <a id="vf"  class="vf" onclick="back()">VIEW-FORM</a>
+    </div>
+  </body>
+</html>
